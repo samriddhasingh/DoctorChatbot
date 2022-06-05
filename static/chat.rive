@@ -13,8 +13,9 @@
 +(ok|sure|why not|thank you)
 - you are soo sweet
 
-+ (book appointment with doctor| doctor appointment|book appointment|appointment)
++ (book appointment with doctor|doctor appointment|book appointment|appointment)
 - oks
+
 
 +(how many symptoms can i enter)
 - you should enter at least 3 symptoms max up to 7 symptoms

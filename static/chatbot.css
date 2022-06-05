@@ -109,7 +109,9 @@ form {
 
 .messages .bot {
   text-align: left;
-  border: 1px solid blue;
+  background-color:rgb(220, 224, 232);
+
+  border-radius: 0px 16px 16px 16px;
   color: black;
 }
 
@@ -117,6 +119,7 @@ form {
   text-align: right;
   margin-left: auto;
   background: #DDD;
+  border-radius: 16px 16px 0px 16px;
   max-width: 40%;
 }
 

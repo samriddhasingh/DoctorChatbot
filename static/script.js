@@ -78,6 +78,10 @@ function botReply(message){
  if(message=="yes"){
    message='fill the form according to symptoms <iframe width="280" height="300" src="form.html"></iframe>';
  }
+ if(message=="appointment"){
+   message='Please fill the form for the appointment';
+  window.open('http://127.0.0.1:8000/recommendation', '_blank');
+ }
  else if(message=="disease"){
   
   message='You might have this';
