@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="{% static 'chatbot.css' %}">
+  <script src="https://use.fontawesome.com/4868c174ee.js"></script>
+</head>
+
+<body>
+  
+  <div class="textcontainer">
+    <div class="maintext">
+      <h1>Doctor Chatbot</h1>
+    </div>
+  </div>
+  <div id="hidden-name">{{fname}}</div>
+  <div class="chat">
+    <div class="messages" id='yourDivID'></div>
+    <div id="edge"></div>
+
+  </div>
+  <div class="wrapper">
+    <div class="search-input">
+      <form class="actions" onclick="scrolltobottom()">
+        <input id='send' type="text" placeholder="Press ‘Enter’ to send…">
+        <button class='yourDivID'>Send</button>
+       
+                
+       
+        
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 
+  <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
