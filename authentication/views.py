@@ -1,5 +1,4 @@
-from turtle import Turtle, settiltangle
-from cv2 import fastNlMeansDenoisingColoredMulti
+
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from setuptools import find_namespace_packages
@@ -71,8 +70,8 @@ def signup(request):
         myuser.save()
         messages.success(request,'Your account has been successfully signed up')
 
-        subject="Welcome to the product finder appp"
-        message="Hello" + myuser.first_name+ "thank you for visiting our website confirmation link below"
+        subject=" Welcome to the DoctorChatbot: Webapp for disease prediction "
+        message="Hello " + myuser.first_name+ ". Thank you for visiting our website confirmation link below 👇👇👇"
         from_email=settings.EMAIL_HOST_USER
         
         to_list=[myuser.email]
@@ -82,7 +81,7 @@ def signup(request):
     
 
         current_site=get_current_site(request)
-        email_subject="confirm your email django login"
+        email_subject="confirm your email DoctorChatbot login "
         message2=render_to_string("email_confirmation.html",{
             'name':myuser.first_name,
             'uid':urlsafe_base64_encode(force_bytes(myuser.pk)),
@@ -148,3 +147,15 @@ def activate(request,uidb64,token):
         return render(request,'activation_failed.html')
     
 
+def recommendation(request):
+    if request.method == 'POST':
+        name=request.POST.get('name')
+        date=request.POST.get('date')
+        mail = request.POST.get('email')
+        to_list=[mail]
+        subject="Appointment Registration "
+        message="Hello " + name + "Thank you for visiting our website Your Appointment have been registered sucessfully Please be in time in Norvic Hospital. \n You have been referred to Dr.Santosh Shah" + '\n Your due time and date is 10:00 AM '+ date 
+        from_email=settings.EMAIL_HOST_USER
+        send_mail(subject,message,from_email,to_list,fail_silently=True)
+    
+    return render(request,'recommendation.html')

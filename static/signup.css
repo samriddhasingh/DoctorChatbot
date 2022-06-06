@@ -12,32 +12,10 @@ body{
   height: 100vh;
   overflow: hidden;
 }
-.heading{
-    display: flex;
-    position: absolute;
-    top: 26%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-
-}
-.heading img{
-    height: 80px;
-    width: 100px;
-    padding: 10px;
-
-}
-.heading h1{
-    margin-top:15px;
-}
 .center{
   position: absolute;
   top: 50%;
-  
+  height: 650px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -112,4 +90,20 @@ input[type="submit"]{
 input[type="submit"]:hover{
   border-color: #2691d9;
   transition: .5s;
+}
+.already{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.already a{
+  padding-left: 5px;
+  color: #2691d9;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }

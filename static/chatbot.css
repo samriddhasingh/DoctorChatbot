@@ -5,8 +5,11 @@
 }
 
 .logout {
-  float: right;
-  margin: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 12pt;
 }
 
 .logout a {
@@ -159,4 +162,21 @@ form {
   align-items: center;
   font-size: 30px;
   color: #2691d9;
+}
+
+#hidden-name {
+  display: none;
+}
+
+.another{
+  position: absolute;
+  font-size: 20px;
+  color: #2691d9;
+  top: 1.4%;
+  right: 6%;
+  cursor: pointer;
+}
+
+.another .haha{
+  padding: 3px;
 }

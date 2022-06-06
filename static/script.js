@@ -117,10 +117,13 @@ function botReply(message){
         reply2=data['precaution1'];
         reply3=data['precaution2'];
        
+       
         text3='Please note this is not a diagnosis. Always visit the doctor if you are in doubt or if your symptoms get worse or dont improve. If you want to book an appointment with doctor please type book an appointment?';
-        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot">${text1} ${message} </div></div>`;
-        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot">${description}  ${text3}</div></div>`;
-        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot"> ${reply2} ${reply3} ${text3}</div></div>`;
+
+        preventiontext = 'Prevention of disease is important. Please follow the following steps:';
+        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot">${text1}<strong>${message}</strong></div></div>`;
+        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot">${description}</div></div>`;
+        message_container.innerHTML += `<div class="mess"><div class="abc"><i class="fa fa-user-md" aria-hidden="true"></i></div><div class="bot">${preventiontext}<li>${reply2}</li><li>${reply3}</li><div>${text3}</div></div></div>`;
       }
     });
     while (queue.length) { 
@@ -186,11 +189,11 @@ function botReady(){
 
  
  bot.sortReplies();
- botReply('Hello, Welcome '+userid+' to Disease prediction system  !!');
+ botReply('Hello, Welcome '+userid+' to Disease prediction system How are you feeling today? ');
 
 }
 function botNotReady(err){
   bot.sortReplies();
-  botReply('Hello, Welcome '+userid+' to Disease prediction system  !!');
+  botReply('Hello, Welcome '+userid+' to Disease prediction system How are you feeling today? ');
   
 }

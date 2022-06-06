@@ -1,4 +1,4 @@
-+ [*] (i am feeling sick|feeling sick|checkup|check|doctor|i am not feeling well|not feeling well) [*]
++ [*] (i am feeling sick|feeling sick|checkup|check|doctor|i am not feeling well|not feeling well|sick) [*]
 - Please enter your symptoms one by one. More you enter the symptoms better system predicts.
 
 + [*] (not sick|feeling good) [*]
@@ -13,7 +13,7 @@
 +(ok|sure|why not|thank you)
 - you are soo sweet
 
-+ (book appointment with doctor|doctor appointment|book appointment|appointment)
++ (book an appointment with doctor|doctor appointment|book appointment|please book an appointment|book an appointment|i want to book an appointment)
 - oks
 
 
@@ -269,7 +269,7 @@
 
 + (what is your name|who are you|who is this)
 - I am <bot name>.
-- You can call me <bot name>.
+- You can call me Doctor Chatbot.
 
 + how old are you
 - I'm <bot age> old.
