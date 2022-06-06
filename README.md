@@ -19,7 +19,7 @@ Django<br>
 3. Rajendra Rawal<br>
 4. Samriddha Singh<br>
 
-<h2>Outcomes</h2>
+<h2>Outcome</h2>
 
 
 ![Screenshot 2022-06-06 102253](https://user-images.githubusercontent.com/59139917/172219541-951aee11-bfe4-4dc7-906b-370abe08541e.png)
