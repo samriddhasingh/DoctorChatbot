@@ -20,5 +20,5 @@ Django<br>
 4. Samriddha Singh<br>
 
 <h2>Outcomes</h2>
-![Screenshot 2022-06-06 102311](https://user-images.githubusercontent.com/59139917/172215118-90b8af4f-102a-4f8b-a5b7-ff4ec95c3bf4.png)
+![screenshot](https://user-images.githubusercontent.com/59139917/172215118-90b8af4f-102a-4f8b-a5b7-ff4ec95c3bf4.png)
 
