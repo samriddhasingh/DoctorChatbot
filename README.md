@@ -20,5 +20,5 @@ Django<br>
 4. Samriddha Singh<br>
 
 <h2>Outcomes</h2>
-![github-small](https://github.com/samriddhasingh/DoctorChatbot/blob/master/image/Screenshot%202022-06-06%20102124.png)
+![Screenshot 2022-06-06 102311](https://user-images.githubusercontent.com/59139917/172214786-8e04d1d2-da4a-4b99-96a1-b767e6422686.png)
 
