@@ -13,11 +13,7 @@ Riverscript<br>
 Django<br>
 
 
-<h2>Project By</h2>
-1. Sulav Thapa<br>
-2. Sushil Bhatta<br>
-3. Rajendra Rawal<br>
-4. Samriddha Singh<br>
+
 
 <h2>Outcome</h2>
 
